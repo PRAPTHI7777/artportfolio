@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amatic SC', cursive; /* Whimsical Ghibli-inspired font */
+    background-color: #f0f8ff; /* Soft blue, Ghibli-esque */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #b0c4de; /* Light steel blue */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #4682b4; /* Deep blue */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.artwork {
+    text-align: center;
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #4682b4;
+    border-radius: 10px;
+    filter: grayscale(50%); /* Black-and-white fade effect */
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.artwork img:hover {
+    filter: grayscale(0%); /* Full color on hover */
+    opacity: 0.9;
+}
+
+.artwork h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #4682b4;
+}
+
+.artwork p {
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #b0c4de;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #4682b4;
+    margin-bottom: 10px;
+}
+
+.artist-photo {
+    max-width: 200px;
+    height: auto;
+    border: 3px solid #4682b4;
+    border-radius: 50%; /* Circular photo for a whimsical touch */
+    margin: 10px 0;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #4682b4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: 'Amatic SC', cursive;
+    background-color: #1a1a1a; /* Dark gray-black */
+    color: #e0e0e0; /* Light gray text */
+    line-height: 1.6;
+}
